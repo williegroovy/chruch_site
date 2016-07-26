@@ -1,0 +1,142 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #1b1b1b;
+    display: block;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, SansSerif;
+}
+
+div {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    cursor: auto;
+}
+
+img {
+    vertical-align: none;
+    border: 0;
+}
+
+.site-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 12;
+    line-height: 30px;
+    vertical-align: middle;
+    height: 60px;
+    transition: all .4s ease-in-out;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .site-header {
+        height: 100px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: transparent;
+        z-index: 10;
+        position: absolute;
+    }
+}
+
+.header-wrapper {
+    height: 60px;
+    display: table;
+    width: 100%
+}
+
+@media (min-width: 768px) {
+    .header-wrapper {
+        height: 100px;
+    }
+}
+
+.header-content-wrapper {
+    position: relative;
+    display: table-row;
+}
+
+.header-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    .content-left {
+        width: 175px;
+    }
+
+    .content-center {
+        display: ms flexbox;
+        display: webkit flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .content-right {
+        width: 175px;
+    }
+}
+
+.logo {
+    height: 60px;
+}
+@media (max-width: 436px) {
+    .logo {
+        height: 50px;
+    }
+
+    .content-center {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        display: inline;
+        height: 80px;
+    }
+}
+
+.main-nav {
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: .11142857em;
+    font-size: 13px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.main-nav a {
+
+    color: #fff;
+    transition: all .15s ease-in-out;
+}
+
+@media (min-width: 1000px) {
+    .main-nav {
+        display: block;
+    }
+}
+
+.bg-image {
+    background-image: url(../img/src_worship_bg.jpg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}

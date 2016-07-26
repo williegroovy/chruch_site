@@ -11,24 +11,41 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     </head>
     <body>
-
-        <div id="main-content">
-            <nav class="navbar navbar-default transparent fade-out">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="pull-right menu-button" id="menu-button">
-                            <p>Menu</p><i id="menu" class="fa fa-bars fa-2x"></i>
-                        </button>
-                        <a class="navbar-brand" href="#">
-
+        <!-- NavBar -->
+        <header class="site-header">
+            <div class="header-wrapper">
+                <div class="header-content-wrapper">
+                    <div class="header-content content-left">
+                        <a href="#">
+                            <img class="logo" src="img/church_logo.png">
                         </a>
                     </div>
+
+                    <div class="header-content content-center text-center">
+                        <div class="menu-header-menu-container">
+                            <ul id="menu-header-menu" class="list-inline main-nav">
+                                <li><a href="#">Sermons</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Get Involved</a></li>
+                                <li><a href="#">Giving</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="header-content content-right text-right">
+                        <div style="width:65px;"></div>
+                    </div>
                 </div>
-            </nav>
+            </div>
+        </header>
+
+        <div class="container" id="main-content">
+            <div class="bg-image"></div>
         </div>
 
         <!-- Library Scripts -->
-        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/app.js"></script>
     </body>
