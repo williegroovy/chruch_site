@@ -72,7 +72,7 @@ img {
     vertical-align: middle;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 881px) {
     .content-left {
         width: 175px;
     }
@@ -119,10 +119,20 @@ img {
     font-weight: 300;
 }
 
-.main-nav a {
+.main-nav:hover a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s;
+}
 
+.main-nav a {
+    text-decoration: none;
     color: #fff;
-    transition: all .15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.main-nav a:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: all 0s;
 }
 
 @media (min-width: 1000px) {
